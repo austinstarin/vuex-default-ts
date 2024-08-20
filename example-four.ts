@@ -4,6 +4,9 @@
         color: string;
         shape: string;
         texture: string;
+        era: {
+            year: number;
+        };
     }
 
     interface State {
@@ -18,5 +21,6 @@
         toy: (state: State) => state.toy,
         // (property) Toy.color: string | undefined
         color: (state: State) => state.toy?.color,
+        year: (state: State) => state.toy?.era.year,
     };
 })();
