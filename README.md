@@ -21,3 +21,7 @@ No error but making `toy` type `Type | Record<string, unknown>`. Getters satisfy
 ## Example 4 ([Link 🔗](example-four.ts))
 
 No error and sets `toy` type to `Type | null`. `toy` no longer has a static type but enforces safe property access on `toy`.
+
+## Example 5 ([Link 🔗](example-five.ts))
+
+No error and sets `toy` type to `Type | Record<string, never>`. Getters enforce safe property access on `toy`.
